@@ -16,13 +16,13 @@ export default function SideMenu(params) {
   // eslint-disable-next-line
   const { Push } = params;
 
-  const handleToolLife = () => {
+  const handleIssues = () => {
     // Push('/toollife');
-    alert(`Tool Life Issues`);
+    alert(`Tooling Issues`);
   };
-  const handleMachiningTimes = () => {
+  const handleEfficiencies = () => {
     // Push('/machining_times');
-    alert(`Machining times issues`);
+    alert(`Plant Efficiencies`);
   };
   const handleSubscribeEmail = () => {
     // Push('/SubscribeEmail');
@@ -32,17 +32,17 @@ export default function SideMenu(params) {
     <List>
       <ListSubheader>Issues</ListSubheader>
       <Divider />
-      <ListItem button onClick={handleToolLife}>
+      <ListItem button onClick={handleIssues}>
         <ListItemIcon>
           <SpeedIcon />
         </ListItemIcon>
-        <ListItemText primary="Tool Life" />
+        <ListItemText primary="Issues" />
       </ListItem>
-      <ListItem button onClick={handleMachiningTimes}>
+      <ListItem button onClick={handleEfficiencies}>
         <ListItemIcon>
           <AirplanemodeActiveIcon />
         </ListItemIcon>
-        <ListItemText primary="Machining Time" />
+        <ListItemText primary="Efficiency" />
       </ListItem>
       {/* <ListItem button onClick={handleIssuesPlant8}>
         <ListItemIcon>
